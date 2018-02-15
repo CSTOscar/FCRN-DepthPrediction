@@ -43,11 +43,11 @@ def predict(model_data_path, image_path):
         # Evalute the network for the given image
         pred = sess.run(net.get_output(), feed_dict={input_node: img})
         
-        # Plot result
-        fig = plt.figure()
-        ii = plt.imshow(pred[0,:,:,0], interpolation='nearest')
-        fig.colorbar(ii)
-        plt.show()
+        # # Plot result
+        # fig = plt.figure()
+        # ii = plt.imshow(pred[0,:,:,0], interpolation='nearest')
+        # fig.colorbar(ii)
+        # plt.show()
         
         return pred
         
